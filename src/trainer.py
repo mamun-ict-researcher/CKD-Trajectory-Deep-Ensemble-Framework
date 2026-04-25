@@ -1,3 +1,17 @@
+"""
+Project: Multi-Horizon CKD Trajectory Prediction
+Module: Model Training & Optimization Pipeline
+Author: Abdhullah-Al-Mamun
+-------------------------------------------------------------------------
+Description: 
+Orchestrates the training lifecycle of the ensemble framework. Includes 
+multi-horizon loss optimization and Optuna-based Bayesian hyperparameter 
+tuning to minimize MAE and maximize forecasting fidelity.
+
+Status: Configured for full-cohort training and pipeline validation.
+-------------------------------------------------------------------------
+"""
+
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import r2_score, mean_squared_error, mean_absolute_error
 import numpy as np
