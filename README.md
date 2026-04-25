@@ -6,9 +6,19 @@
 ##  Research Overview
 This repository contains the official implementation of our research on predicting **Chronic Kidney Disease (CKD)** progression. By integrating **Deep Sequential Modeling** with **Tree-based Ensembles**, this framework provides high-fidelity forecasting of eGFR (estimated Glomerular Filtration Rate) trajectories across 3, 6, and 12-month horizons.
 
-This implementation serves as a methodological precursor to my PhD research at the **Software Research Lab (SRLab)**, focusing on **SIVF (Semantic Integrity Verification Framework)** for software evolution.
+This implementation serves as a methodological precursor to my PhD research, focusing on **SIVF (Semantic Integrity Verification Framework)** for software evolution.
 
 ##  Core Methodology
+
+<div align="center">
+  <img src="./assets/Fig1_Visual flow of multi-stage data preprocessing pipeline.png" width="800">
+  <p><i>Fig. 1: Visual flow of the memory-efficient multi-stage data preprocessing pipeline (Python/Dask) for deriving 13 CKD features from MIMIC-IV from our IEEE publication.</i></p>
+</div>
+
+<div align="center">
+  <img src="./assets/Fig2_End-to-End Methodology Pipeline.png" width="800">
+  <p><i>Fig. 2: End-to-End Methodology Pipeline for Multi-Horizon eGFR Prediction from our IEEE publication.</i></p>
+</div>
 
 ### 1. Scalable Ingestion & Metadata Synchronization
 The pipeline utilizes optimized **Parquet-based storage architectures** to facilitate high-throughput ingestion of longitudinal EHR data. This ensures efficient memory mapping and metadata consistency across heterogeneous clinical sources, a skill honed through 15+ years of managing massive banking ICT infrastructures.
@@ -26,10 +36,10 @@ The framework features a sophisticated **Stacked Ensemble** that fuses:
 - **Meta-Learner:** A Linear Regression model orchestrates shared latent representations to optimize multi-horizon forecasting accuracy.
 
 ### 5. Clinically-Aligned Explainable AI (XAI)
-Achieving a high-fidelity **R² score of 0.89**, the system integrates **SHAP (SHapley Additive exPlanations)** to quantify feature importance, ensuring "Model Transparency" and identifying pathophysiological drivers behind predicted renal decline.
+Achieving a high-fidelity **R² score of 0.778** for 12 month prediction, the system integrates **SHAP (SHapley Additive exPlanations)** to quantify feature importance, ensuring "Model Transparency" and identifying pathophysiological drivers behind predicted renal decline.
 
 ##  Key Results
-- **Performance:** Achieved an $R^2$ of **0.8943** in multi-horizon testing.
+- **Performance:** Achieved an $R^2$ of **0.778** for 12-month prediction in multi-horizon testing.
 - **Fidelity:** Successfully modeled non-linear trajectories with significant reduction in Mean Absolute Error (MAE).
 - **Interpretability:** Validated top clinical drivers (Creatinine, Blood Pressure, Age) using SHapley values.
 
@@ -38,6 +48,7 @@ Achieving a high-fidelity **R² score of 0.89**, the system integrates **SHAP (S
 - `notebooks/`: Interactive Research Dashboard (Ready-to-run on Google Colab).
 - `outputs/`: Quantitative research artifacts and trajectory visualization plots.
 - `data/`: Sample data schema and metadata definitions.
+- `assets/`: Visual diagram of the pipeline.
 
 ##  Technical Stack
 - **Deep Learning:** TensorFlow, Keras (LSTM, Transformers)
