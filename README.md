@@ -1,7 +1,7 @@
 # Multi-Horizon CKD Trajectory Prediction: A Deep Sequential & Stacked Ensemble Framework
 
 [![Paper](https://img.shields.io/badge/IEEE-Research_Paper-blue)](https://ieeexplore.ieee.org/abstract/document/11429208)
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/[YOUR_USERNAME]/CKD_Trajectory_Project/blob/main/notebooks/Trajectory_Research_Main.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/mamun-ict-researcher/CKD_Trajectory_Project/blob/main/notebooks/Trajectory_Research_Main.ipynb)
 
 ##  Research Overview
 This repository contains the official implementation of our research on predicting **Chronic Kidney Disease (CKD)** progression. By integrating **Deep Sequential Modeling** with **Tree-based Ensembles**, this framework provides high-fidelity forecasting of eGFR (estimated Glomerular Filtration Rate) trajectories across 3, 6, and 12-month horizons.
