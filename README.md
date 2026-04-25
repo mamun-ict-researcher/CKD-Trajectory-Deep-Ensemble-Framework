@@ -96,9 +96,17 @@ If you find this research or codebase useful for your work, please cite our IEEE
 I am **Abdhullah-Al-Mamun**, a Senior ICT Professional (Banking/Fintech Sector) and PhD Researcher. My research focuses on **Trustworthy AI**, **Predictive Analytics**, and **Software Integrity** in mission-critical environments such as **Fintech** and **Healthcare Informatics**. I bridge the gap between 15+ years of industrial expertise in banking ICT and advanced deep learning research.
 
 
-[![Google Scholar](https://shields.io)](https://scholar.google.com/citations?user=Yx7SwvIAAAAJ&hl=en) 
-[![LinkedIn](https://shields.io)](https://linkedin.com) 
-[![Email](https://shields.io)](mailto:khan.mamun3.14@gmail.com)
+<p align="left">
+  <a href="https://scholar.google.com/citations?user=Yx7SwvIAAAAJ&hl=en">
+    <img src="https://img.shields.io/badge/Google%20Scholar-Profile-4285F4?logo=google-scholar&logoColor=white"/>
+  </a>
+  <a href="https://linkedin.com/in/YOUR_ID">
+    <img src="https://img.shields.io/badge/LinkedIn-Profile-0A66C2?logo=linkedin&logoColor=white"/>
+  </a>
+  <a href="mailto:khan.mamun3.14@gmail.com">
+    <img src="https://img.shields.io/badge/Email-Contact-D14836?logo=gmail&logoColor=white"/>
+  </a>
+</p>
 
 ---
 *Developed by **Abdhullah-Al-Mamun**, Senior ICT Professional and PhD Candidate, focusing on Trustworthy AI and Software Evolution.*
