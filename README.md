@@ -38,10 +38,29 @@ The framework features a sophisticated **Stacked Ensemble** that fuses:
 ### 5. Clinically-Aligned Explainable AI (XAI)
 Achieving a high-fidelity **R² score of 0.778** for 12 month prediction, the system integrates **SHAP (SHapley Additive exPlanations)** to quantify feature importance, ensuring "Model Transparency" and identifying pathophysiological drivers behind predicted renal decline.
 
-##  Key Results
-- **Performance:** Achieved an $R^2$ of **0.778** for 12-month prediction in multi-horizon testing.
-- **Fidelity:** Successfully modeled non-linear trajectories with significant reduction in Mean Absolute Error (MAE).
+## Key Results & Validation
+
+To validate the framework's fidelity, we compared predicted vs. actual eGFR trajectories and evaluated various architectures.
+
+### 1. Predictive Fidelity (Actual vs. Predicted)
+The following visualization demonstrates our model's ability to capture non-linear renal decline patterns accurately across the test cohort.
+
+<div align="center">
+  <img src="./outputs/Fig.%205_Predicted%20versus%20Actual%20eGFR.png" width="700">
+  <p><i>Fig. 5: Predicted versus Actual eGFR for a sample patient (ID: 12596559). The plot shows how well the model follows the patient’s speed and direction of kidney function change from our IEEE publication.</i></p>
+</div>
+
+### 2. Quantitative Performance Metrics
+Our Hybrid Stacked Ensemble significantly outperformed baseline models across all horizons. Detailed metrics (R², MAE, RMSE) are summarized below from our research findings.
+
+<div align="center">
+  <img src="./outputs/TABLE%20II_Model%20Performance%20on%20Test%20Set.png" width="600">
+  <p><i>TABLE II: Model Performance on Test Set (3, 6, 12-Month Horizons) from our IEEE publication</i></p>
+</div>
+
 - **Interpretability:** Validated top clinical drivers (Creatinine, Blood Pressure, Age) using SHapley values.
+- **Fidelity:** Successfully modeled non-linear trajectories with a significant reduction in Mean Absolute Error (MAE).
+
 
 ## Repository Structure
 - `src/`: Modular Python source code (Data Loaders, Architectures, Trainers).
