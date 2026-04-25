@@ -9,6 +9,48 @@ This repository presents an uncertainty-aware deep ensemble framework for longit
 
 While the application domain is healthcare, the core contribution of this work lies in modeling complex temporal systems under uncertainty, which is directly transferable to other domains involving evolving entities, such as software systems, code evolution, and semantic change detection.
 
+## Novel Contribution
+
+This work goes beyond standard CKD prediction by focusing on **robust longitudinal modeling under uncertainty**, addressing limitations in existing deep learning approaches that rely solely on point estimates.
+
+### Key Contributions
+
+1. **Uncertainty-Aware Longitudinal Modeling**
+
+   * Unlike conventional CKD prediction models that output deterministic predictions, this framework incorporates **deep ensemble-based uncertainty estimation** to quantify prediction confidence across time.
+   * This enables identification of **high-risk prediction regions**, particularly under sparse or irregular observations.
+
+2. **Multi-Horizon Trajectory Forecasting**
+
+   * Instead of single-step prediction, the model performs **multi-horizon forecasting**, capturing the *evolution pattern* of CKD progression rather than static outcomes.
+   * This provides a richer representation of temporal dynamics and aligns with real-world progression analysis.
+
+3. **Robustness to Irregular Time-Series**
+
+   * The framework is designed to handle **non-uniform temporal intervals**, a common issue in real-world longitudinal datasets.
+   * This improves generalization compared to models assuming fixed time steps.
+
+4. **Ensemble-Based Stability Analysis**
+
+   * The use of deep ensembles enables analysis of **prediction variance across models**, offering insights into model reliability rather than only accuracy.
+
+---
+
+### Research Insight
+
+This work demonstrates that:
+
+> *Modeling uncertainty in temporal systems is as important as modeling the signal itself.*
+
+This insight is directly transferable to other domains involving evolving entities, such as **software systems**, where:
+
+* Code evolution resembles temporal trajectories
+* Semantic drift corresponds to uncertain deviations
+* Reliable prediction requires calibrated confidence, not just accuracy
+
+This forms the methodological foundation for future research on **uncertainty-aware semantic change detection in evolving software systems**.
+
+
 ##  Research Positioning
 
 This work serves as a **foundational study** for my proposed PhD research:
