@@ -98,7 +98,7 @@ I am **Abdhullah-Al-Mamun**, a Senior ICT Professional (Banking/Fintech Sector) 
 
 [![Google Scholar](https://shields.io)](https://scholar.google.com/citations?user=Yx7SwvIAAAAJ&hl=en) 
 [![LinkedIn](https://shields.io)](https://linkedin.com) 
-[![Email](https://shields.io)](mailto:khan.mamun3.14@gmail.com) 
+[![Email](https://shields.io)](mailto:khan.mamun3.14@gmail.com)
 
 ---
 *Developed by **Abdhullah-Al-Mamun**, Senior ICT Professional and PhD Candidate, focusing on Trustworthy AI and Software Evolution.*
