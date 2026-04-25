@@ -1,3 +1,19 @@
+"""
+Project: Multi-Horizon CKD Trajectory Prediction
+Module: Architecture Definitions
+Author: Abdhullah-Al-Mamun
+-------------------------------------------------------------------------
+Description: 
+Defines the Deep Sequential Models (LSTM, Transformers) and the 
+Tree-based Ensemble (XGBoost, CatBoost) components. Implements the 
+stacked framework for shared latent representation learning.
+
+Academic Reference: 
+Corresponds to the "Proposed Framework" architecture in the IEEE publication.
+https://ieeexplore.ieee.org/abstract/document/11429208
+-------------------------------------------------------------------------
+"""
+
 import tensorflow as tf
 from tensorflow import keras
 from tensorflow.keras import layers
