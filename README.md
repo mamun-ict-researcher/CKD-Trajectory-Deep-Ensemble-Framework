@@ -11,7 +11,7 @@ While the application domain is healthcare, the core contribution of this work l
 
 ## Novel Contribution
 
-This work goes beyond standard CKD prediction by focusing on **robust longitudinal modeling under uncertainty**, addressing limitations in existing deep learning approaches that rely solely on point estimates.
+This study empirically shows that uncertainty-aware ensembles provide more reliable predictions than single models under irregular temporal sampling, particularly in sparse observation regimes.This work goes beyond standard CKD prediction by focusing on **robust longitudinal modeling under uncertainty**, addressing limitations in existing deep learning approaches that rely solely on point estimates.
 
 ### Key Contributions
 
@@ -149,10 +149,19 @@ Our Hybrid Stacked Ensemble significantly outperformed baseline models across al
 This research was conducted using the **MIMIC-IV (v2.2)** database. In strict adherence to the **PhysioNet Data Use Agreement (DUA)** and HIPAA privacy regulations, original patient-level data is **NOT** shared in this repository.
 
 **Synthetic Data Note:** The execution results currently shown (e.g., $R^2 \\approx 0.99$) are generated using a **Privacy-Safe Synthetic Sample** provided in the `/data` folder. This sample is strictly for **System Pipeline Validation** (to prove the code runs to completion).   
+**All reported scientific conclusions are based on real clinical data (IEEE publication). Synthetic results are included solely for pipeline reproducibility.**
 
 **Scientific Validation:** The high-fidelity results reported in my associated IEEE publication ($R^2 = 0.89$) were achieved on the full, non-randomized clinical cohort.
 
 **Access:** To reproduce the original results, researchers must obtain authorized access through [PhysioNet](https://physionet.org/).
+
+## Limitations
+
+- Performance degrades under extremely sparse patient observations
+- Ensemble uncertainty may be miscalibrated in highly imbalanced cohorts
+- Temporal windowing may lose long-term dependencies
+
+These limitations motivate future work in more robust temporal representation learning.
 
 ## Industry Context
 
