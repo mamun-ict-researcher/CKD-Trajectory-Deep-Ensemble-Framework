@@ -1,3 +1,19 @@
+"""
+Project: Multi-Horizon CKD Trajectory Prediction
+Module: Data Ingestion & Engineering
+Author: Abdhullah-Al-Mamun
+-------------------------------------------------------------------------
+Description: 
+Handles longitudinal EHR data ingestion from MIMIC-IV sources. Implements 
+optimized Parquet-based storage architectures and non-parametric median 
+imputation to ensure high-throughput processing and metadata synchronization.
+
+Academic Reference: 
+Implementation follows the Data Cleansing methodology in Section 3 of:
+https://ieeexplore.ieee.org/abstract/document/11429208
+-------------------------------------------------------------------------
+"""
+
 import pandas as pd
 import numpy as np
 from tqdm import tqdm
