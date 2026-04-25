@@ -1,12 +1,31 @@
-# Multi-Horizon CKD Trajectory Prediction: A Deep Sequential & Stacked Ensemble Framework
+# Trajectory Modeling with Uncertainty-Aware Deep Ensembles
+(Applied to Chronic Kidney Disease Progression)
 
 [![Paper](https://img.shields.io/badge/IEEE-Research_Paper-blue)](https://ieeexplore.ieee.org/abstract/document/11429208)
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/mamun-ict-researcher/CKD_Trajectory_Project/blob/main/notebooks/Trajectory_Research_Main.ipynb)
 
 ##  Research Overview
-This repository contains the official implementation of our research on predicting **Chronic Kidney Disease (CKD)** progression. By integrating **Deep Sequential Modeling** with **Tree-based Ensembles**, this framework provides high-fidelity forecasting of eGFR (estimated Glomerular Filtration Rate) trajectories across 3, 6, and 12-month horizons.
+This repository presents an uncertainty-aware deep ensemble framework for longitudinal trajectory modeling, applied to Chronic Kidney Disease (CKD) progression using eGFR time-series data.
 
-This implementation serves as a methodological precursor to my PhD research, focusing on **SIVF (Semantic Integrity Verification Framework)** for software evolution.
+While the application domain is healthcare, the core contribution of this work lies in modeling complex temporal systems under uncertainty, which is directly transferable to other domains involving evolving entities, such as software systems, code evolution, and semantic change detection.
+
+##  Research Positioning
+
+This work serves as a **foundational study** for my proposed PhD research:
+
+> *“Towards Robust and Scalable Semantic Change Detection: An Uncertainty-Aware Multi-View Framework for Evolving Software”*
+
+The methodological parallels are as follows:
+
+| This Work (Healthcare)      | PhD Direction (Software Engineering)         |
+| --------------------------- | -------------------------------------------- |
+| Patient trajectory modeling | Code evolution trajectory modeling           |
+| eGFR progression            | Semantic drift across versions               |
+| Deep ensemble learning      | Multi-view representation learning           |
+| Predictive uncertainty      | Uncertainty calibration for semantic changes |
+| Longitudinal time-series    | Version history dynamics                     |
+
+This project demonstrates my ability to design **robust, uncertainty-aware models for sequential data**, which I aim to extend to **semantic analysis of evolving software systems**.
 
 ##  Core Methodology
 
@@ -38,6 +57,15 @@ The framework features a sophisticated **Stacked Ensemble** that fuses:
 ### 5. Clinically-Aligned Explainable AI (XAI)
 Achieving a high-fidelity **R² score of 0.778** for 12 month prediction, the system integrates **SHAP (SHapley Additive exPlanations)** to quantify feature importance, ensuring "Model Transparency" and identifying pathophysiological drivers behind predicted renal decline.
 
+## Methodological Transferability
+
+The techniques developed in this work are **domain-agnostic** and directly applicable to software engineering research:
+
+* Temporal models → **Code evolution sequence modeling**
+* Ensemble learning → **Multi-view fusion of code representations (AST, embeddings, behavior)**
+* Uncertainty estimation → **Confidence scoring for semantic drift detection**
+* Multi-horizon prediction → **Future defect or regression forecasting**
+
 ## Key Results & Validation
 
 To validate the framework's fidelity, we compared predicted vs. actual eGFR trajectories and evaluated various architectures.
@@ -61,7 +89,6 @@ Our Hybrid Stacked Ensemble significantly outperformed baseline models across al
 - **Interpretability:** Validated top clinical drivers (Creatinine, Blood Pressure, Age) using SHapley values.
 - **Fidelity:** Successfully modeled non-linear trajectories with a significant reduction in Mean Absolute Error (MAE).
 
-
 ## Repository Structure
 - `src/`: Modular Python source code (Data Loaders, Architectures, Trainers).
 - `notebooks/`: Interactive Research Dashboard (Ready-to-run on Google Colab).
@@ -77,6 +104,36 @@ Our Hybrid Stacked Ensemble significantly outperformed baseline models across al
 - **Data Engineering:** Pandas, NumPy, PyArrow
 
 ### Ethical Compliance & Data Disclaimer (MIMIC-IV)\n","This research was conducted using the **MIMIC-IV (v2.2)** database. In strict adherence to the **PhysioNet Data Use Agreement (DUA)** and HIPAA privacy regulations, original patient-level data is **NOT** shared in this repository.\n","\n","*   **Synthetic Data Note:** The execution results currently shown (e.g., $R^2 \\approx 0.99$) are generated using a **Privacy-Safe Synthetic Sample** provided in the `/data` folder. This sample is strictly for **System Pipeline Validation** (to prove the code runs to completion).\n","*   **Scientific Validation:** The high-fidelity results reported in my associated IEEE publication ($R^2 = 0.89$) were achieved on the full, non-randomized clinical cohort.\n","*   **Access:** To reproduce the original results, researchers must obtain authorized access through [PhysioNet](https://physionet.org/).
+
+## Industry Context
+
+With over **15 years of experience in banking and mission-critical systems**, I have observed that:
+
+* Real-world systems evolve continuously
+* Small structural changes can lead to significant behavioral impact
+* Lack of uncertainty awareness often leads to overlooked risks
+
+This motivated my interest in **robust, interpretable, and uncertainty-aware modeling**, bridging **industry challenges and academic research**.
+
+## Future Work
+
+Building on this foundation, future research will focus on:
+
+* Multi-view representation learning for code (AST, embeddings, execution behavior)
+* Semantic change detection across software versions
+* Uncertainty calibration for developer decision support
+* Cognitive alignment in code review processes
+
+## Relevance to PhD Research
+
+This repository demonstrates:
+
+* Ability to design **end-to-end machine learning systems**
+* Experience with **longitudinal and sequential data modeling**
+* Understanding of **uncertainty quantification**
+* Capability to translate **real-world problems into research frameworks**
+
+These skills directly support my proposed research in **semantic analysis of evolving software systems**.
 
 ## Citation
 If you find this research or codebase useful for your work, please cite our IEEE publication:
