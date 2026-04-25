@@ -77,5 +77,28 @@ Our Hybrid Stacked Ensemble significantly outperformed baseline models across al
 - **Data Engineering:** Pandas, NumPy, PyArrow
 
 ### Ethical Compliance & Data Disclaimer (MIMIC-IV)\n","This research was conducted using the **MIMIC-IV (v2.2)** database. In strict adherence to the **PhysioNet Data Use Agreement (DUA)** and HIPAA privacy regulations, original patient-level data is **NOT** shared in this repository.\n","\n","*   **Synthetic Data Note:** The execution results currently shown (e.g., $R^2 \\approx 0.99$) are generated using a **Privacy-Safe Synthetic Sample** provided in the `/data` folder. This sample is strictly for **System Pipeline Validation** (to prove the code runs to completion).\n","*   **Scientific Validation:** The high-fidelity results reported in my associated IEEE publication ($R^2 = 0.89$) were achieved on the full, non-randomized clinical cohort.\n","*   **Access:** To reproduce the original results, researchers must obtain authorized access through [PhysioNet](https://physionet.org/).
+
+## Citation
+If you find this research or codebase useful for your work, please cite our IEEE publication:
+
+```bibtex
+@inproceedings{mamun2026multi,
+  title={Multi-Horizon Chronic Kidney Disease Trajectory Prediction via Interpretable Stacked Ensemble and Deep Sequential Modeling},
+  author={Mamun, Abdhullah-Al and Hasan, Nusrat},
+  booktitle={2026 5th International Conference on Electrical, Computer \& Telecommunication Engineering (ICECTE)},
+  pages={1--6},
+  year={2026},
+  organization={IEEE}
+}
+```
+
+## Contact & Collaboration
+I am **Abdhullah-Al-Mamun**, a Senior ICT Professional (Banking/Fintech Sector) and PhD Researcher. My research focuses on **Trustworthy AI**, **Predictive Analytics**, and **Software Integrity** in mission-critical environments such as **Fintech** and **Healthcare Informatics**. I bridge the gap between 15+ years of industrial expertise in banking ICT and advanced deep learning research.
+
+
+[![Google Scholar](https://shields.io)](https://scholar.google.com/citations?user=Yx7SwvIAAAAJ&hl=en) 
+[![LinkedIn](https://shields.io)](https://linkedin.com) 
+[![Email](https://shields.io)](mailto:khan.mamun3.14@gmail.com) 
+
 ---
 *Developed by **Abdhullah-Al-Mamun**, Senior ICT Professional and PhD Candidate, focusing on Trustworthy AI and Software Evolution.*
