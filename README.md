@@ -72,7 +72,7 @@ This project demonstrates my ability to design **robust, uncertainty-aware model
 ##  Core Methodology
 
 <div align="center">
-  <img src="./assets/Fig1_Visual flow of multi-stage data preprocessing pipeline.png" width="800">
+  <img src="./assets/Fig1_Visual_flow_of_multi-stage_data_preprocessing_pipeline.png" width="800">
   <p><i>Fig. 1: Visual flow of the memory-efficient multi-stage data preprocessing pipeline (Python/Dask) for deriving 13 CKD features from MIMIC-IV from our IEEE publication.</i></p>
 </div>
 
