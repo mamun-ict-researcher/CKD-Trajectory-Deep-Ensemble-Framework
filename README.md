@@ -2,7 +2,7 @@
 (Applied to Chronic Kidney Disease Progression)
 
 [![Paper](https://img.shields.io/badge/IEEE-Research_Paper-blue)](https://ieeexplore.ieee.org/abstract/document/11429208)
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/mamun-ict-researcher/CKD_Trajectory_Project/blob/main/notebooks/Trajectory_Research_Main.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/mamun-ict-researcher/CKD-Trajectory-Deep-Ensemble-Framework/blob/main/notebooks/Trajectory_Research_Main.ipynb)
 
 ##  Research Overview
 This repository presents an uncertainty-aware deep ensemble framework for longitudinal trajectory modeling, applied to Chronic Kidney Disease (CKD) progression using eGFR time-series data.
